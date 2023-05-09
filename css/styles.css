@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Indie+Flower&family=Permanent+Marker&family=Roboto:wght@300&display=swap');
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.90em;
+    color: #333;
+    background-color: #fff;
+}
+
+.header-site{
+    background-image: url(../img/bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding-top: 300px;
+    padding-bottom: 500px;
+}
+
+.container{
+    padding: 0 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header-site h2{
+    font-size: 5em;
+    font-family: 'Permanent Marker', verdana;
+    text-shadow: 5px 5px 5px black;
+}
+
+h2{
+    font-size: 4em;
+    font-family: 'Acme', verdana;
+}
+
+.text-center{text-align: center;}
+
+.lead{
+    margin-bottom: 20px;
+    font-size: 1.4em;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid transparent;
+}
+
+a{text-decoration: none;}
+
+.btn-red{
+    color: #fff;
+    background-color: tomato;
+    border-color: tomato;
+}
+
+.btn-red:hover{
+    background-color: rgb(197, 74, 53);
+    border-color: rgb(197, 74, 53);
+    animation: btnRedHover 0.3s;
+}
+
+.btn-green{
+    color: #333;
+    background-color: greenyellow;
+    border-color: greenyellow;
+}
+
+.btn-green:hover{
+    background-color: rgb(116, 173, 31);
+    border-color: rgb(116, 173, 31);
+    animation: btnGreenHover 0.3s;
+}
+
+@keyframes btnRedHover{
+    from {background-color: tomato; border-color: tomato;}
+
+    to {background-color: rgb(197, 74, 53); border-color: rgb(197, 74, 53);}
+}
+
+@keyframes btnGreenHover{
+    from {background-color: greenyellow; border-color: greenyellow;}
+
+    to {background-color: rgb(116, 173, 31); border-color: rgb(116, 173, 31);}
+}
