@@ -4,18 +4,21 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.90em;
     color: #333;
-    background-color: #fff;
+    background-color: rgb(0, 0, 0)
 }
 
 .header-site{
     background-image: url(../img/bg.jpg);
+    padding-top: 300px;
+    padding-bottom: 500px;
+}
+
+.header-site, .img-site{
     background-attachment: fixed;
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
     color: #fff;
-    padding-top: 300px;
-    padding-bottom: 500px;
 }
 
 .container{
@@ -33,6 +36,13 @@ body{
 h2{
     font-size: 4em;
     font-family: 'Acme', verdana;
+}
+
+h3{
+    font-size: 2em;
+    font-family: 'Indie Flower', verdena;
+    font-weight: bold;
+    color: rgb(48, 48, 48);
 }
 
 .text-center{text-align: center;}
@@ -62,34 +72,106 @@ a{text-decoration: none;}
     color: #fff;
     background-color: tomato;
     border-color: tomato;
+    transition: all ease-in 100ms;
 }
 
 .btn-red:hover{
     background-color: rgb(197, 74, 53);
     border-color: rgb(197, 74, 53);
-    animation: btnRedHover 0.3s;
 }
 
 .btn-green{
     color: #333;
     background-color: greenyellow;
     border-color: greenyellow;
+    transition: all ease-in 100ms;
 }
 
 .btn-green:hover{
     background-color: rgb(116, 173, 31);
     border-color: rgb(116, 173, 31);
-    animation: btnGreenHover 0.3s;
 }
 
-@keyframes btnRedHover{
-    from {background-color: tomato; border-color: tomato;}
 
-    to {background-color: rgb(197, 74, 53); border-color: rgb(197, 74, 53);}
+
+.conteudo-site{
+    padding: 100px 0 450px 0;
+    background-color: #fff;
 }
 
-@keyframes btnGreenHover{
-    from {background-color: greenyellow; border-color: greenyellow;}
+.conteudo-site .container{
+    margin: auto;
+    width: 1200px;
+}
 
-    to {background-color: rgb(116, 173, 31); border-color: rgb(116, 173, 31);}
+.box{
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 1px 6px 5px #0000004a;
+    float: left;
+    margin: 20px;
+    padding: 20px;
+    transition: all ease-in 100ms;
+}
+
+.box:hover{
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+}
+
+.thumbnail{
+    overflow: hidden;
+}
+
+.thumbnail img{
+    max-width: 100%;
+}
+
+.img-site{
+    background-image: url(../img/bg2.jpg);
+    padding: 200px 0 200px 0;
+    border-radius: 0 0 25px 25px;
+}
+
+.media{
+    border: 1px solid #fff;
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.555);
+    border-radius: 15px;
+    box-shadow: 5px 1px 6px 5px #0000004a;
+}
+
+.media .box{
+    width: 510px;
+    height: 300px;
+    float: left;
+    margin: 20px;
+}
+
+.media .lado1{background-color: black;}
+
+.media .lado2{background-color: black;}
+
+.box audio{
+    width: 100%;
+    margin-top: 120px;
+}
+
+.box video{
+    width: 500px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.footer-site{
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+}
+
+.footer-site p{
+    margin-top: 25px;
 }
